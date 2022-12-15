@@ -149,7 +149,7 @@ public Action Command_Votekick(int client, int args)
 	
 	int len = BreakString(text, arg, sizeof(arg));
 	
-	int target = FindTarget(client, arg);
+	int target = FindTarget(client, arg, false, false);
 	if (target == -1)
 	{
 		return Plugin_Handled;
